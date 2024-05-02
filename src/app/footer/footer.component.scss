@@ -1,0 +1,49 @@
+@import '../../styles.scss';
+
+.container{
+  height: 25vh;
+  background-color: $primary-200;
+  display: flex;
+  padding: 0% 5%;
+  padding-right: 10%;
+}
+
+#logo{
+  margin: auto 0;
+  color: $primary-300;
+}
+
+#company{
+  font-size: 1.2rem;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+#footer-lists{
+  margin-left: auto;
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 5px 0px;
+  font-size: 1rem;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.list-container {
+  margin: 0% 1vw;
+}
