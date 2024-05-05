@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-$primary-100: #B8A9D9;
+$primary-100: #b8a9d9;
 $primary-trans: rgba(184, 169, 217, 0.71);
-$primary-200: #8C76BD;
+$primary-200: #8c76bd;
 $primary-300: #003366;
 
 html,
 body {
   height: 100%;
-  font-size: calc(.5 * (1.5vh + 1.1vw));
+  font-size: calc(0.5 * min(3vh, 3vw));
 }
 body {
   margin: 0;

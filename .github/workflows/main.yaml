@@ -1,0 +1,24 @@
+name: Deploy
+run-name: Deploy
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
+jobs:
+  Build_Angular_App:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          cd ${{ github.workspace }} 
+          make build
+          git config user.name 'deployer'
+          git config user.email 'linhao.liu98@gmail.com'
+          git add docs
+          git commit -m "deploy result"
+          git push --set-upstream origin main:prod --force

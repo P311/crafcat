@@ -1,6 +1,6 @@
-@import '../../styles.scss';
+@import "../../styles.scss";
 
-.container{
+.container {
   height: 25vh;
   background-color: $primary-200;
   display: flex;
@@ -8,42 +8,31 @@
   padding-right: 10%;
 }
 
-#logo{
+#logo-img {
+  height: min(8vh, 50vw);
+}
+
+#logo {
   margin: auto 0;
   color: $primary-300;
 }
 
-#company{
+#company {
   font-size: 1.2rem;
   margin-top: 3%;
   margin-left: 5%;
 }
 
-#footer-lists{
-  margin-left: auto;
+#footer-lists {
+  margin: auto;
   display: flex;
   width: 100%;
   flex-direction: row-reverse;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin: 5px 0px;
-  font-size: 1rem;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
-}
-
-li a:hover {
-  text-decoration: underline;
+  justify-content: space-evenly;
 }
 
 .list-container {
   margin: 0% 1vw;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
