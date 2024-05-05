@@ -11,18 +11,27 @@
 }
 
 #logo-title {
-  font-size: 1.7rem;
+  font-size: $font-md;
   padding-left: 1%;
 }
 
 .nav-btns {
   display: flex;
-  font-size: 1.7rem;
+  font-size: $font-md;
   width: 100%;
-  color: $primary-200;
+  color: $primary-100;
   flex-direction: row-reverse;
 }
 
 .nav-btn {
   margin: 0% 2%;
+}
+
+@media (max-width: 768px) {
+  #logo {
+    display: none;
+  }
+  #logo-title {
+    display: none;
+  }
 }

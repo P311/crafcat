@@ -1,7 +1,6 @@
 @import "../../styles.scss";
 
 .container {
-  height: 25vh;
   background-color: $primary-200;
   display: flex;
   padding: 0% 5%;
@@ -18,7 +17,7 @@
 }
 
 #company {
-  font-size: 1.2rem;
+  font-size: $font-sm;
   margin-top: 3%;
   margin-left: 5%;
 }
@@ -32,7 +31,13 @@
 }
 
 .list-container {
-  margin: 0% 1vw;
+  margin: 1% 1vw;
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: $font-sm;
+}
+
+@media (max-width: 1026px) {
+  #logo {
+    display: none;
+  }
 }
