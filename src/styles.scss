@@ -14,6 +14,13 @@ body {
   margin: 0;
 }
 
+.primary-btn:hover {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(266deg)
+    brightness(106%) contrast(103%);
+  color: white;
+  cursor: pointer;
+}
+
 $font-sm: 1.2rem; //24px
 $font-md: 1.7rem; //36px
 $font-lg: 2.4rem; //48px
