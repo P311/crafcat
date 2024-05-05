@@ -1,7 +1,9 @@
+@import "../../styles.scss";
+
 .container {
   height: 75vh;
 
-  background-image: url("../../assets/intro_bg1.png");
+  background-image: url("../../assets/bgs/intro_bg1.png");
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,13 +20,52 @@
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: $font-lg;
 }
 
 h1 {
-  font-size: 3.4rem;
+  font-size: $font-xl;
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: $font-sm;
+  margin: 0px 10px;
+}
+
+#start-btn {
+  width: min(18rem, 60vw);
+  height: 6vh;
+  border-radius: 2rem;
+  background: $primary-trans;
+  font-size: $font-lg;
+  color: white;
+  margin-top: 3vh;
+}
+
+#start-btn:hover {
+  background: $primary-trans-hover;
+}
+
+#slider-container {
+  top: 11vh;
+  right: 7vw;
+  font-size: $font-sm;
+  position: absolute;
+  color: $primary-100;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-txt {
+  margin: 1px 5px 0px 5px;
+}
+
+.slider-btn {
+  width: 30px;
+}
+
+.slider-btn:hover {
+  color: white;
 }
