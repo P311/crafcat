@@ -1,8 +1,8 @@
 build: 
 	npm install
 	npm run build
-	rm -rf docs
-	cp -rf ./dist/dreamcrafters/browser docs
+	if [ -d docs ]; then rm -rf docs; fi
+	cp -rf ./dist/crafcat/browser docs
 
 format:
 	npx prettier . --write
