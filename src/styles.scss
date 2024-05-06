@@ -13,6 +13,7 @@ body {
 }
 body {
   margin: 0;
+  font-family: "sm-txt-font";
 }
 
 .primary-btn:hover {
@@ -27,7 +28,29 @@ $font-md: 1.7rem; //36px
 $font-lg: 2.4rem; //48px
 $font-xl: 3.4rem; //72px
 
+$svg-hover-color: invert(0%) sepia(100%) saturate(0%) hue-rotate(266deg)
+  brightness(106%) contrast(103%);
+
+$lg-txt-font: "lg-txt-font";
+$sm-txt-font: "sm-txt-font";
 // $font-sm: 24px;
 // $font-md: 36px;
 // $font-lg: 48px;
 // $font-xl: 72px;
+
+h1,
+h2,
+h3 {
+  font-family: "lg-txt-font";
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "lg-txt-font";
+  src: url("assets/fonts/YouSheBiaoTiHei.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "sm-txt-font";
+  src: url("assets/fonts/CangJiGaoDeGuoMiaoHei.ttf") format("opentype");
+}

@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription, interval } from 'rxjs';
 
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
   styleUrl: './intro.component.scss',
 })
-export class IntroComponent implements OnInit {
+export class IntroComponent implements OnInit, OnDestroy {
   readonly imgs: string[] = [
     'assets/bgs/intro_bg1.png',
     'assets/bgs/intro_bg2.png',
@@ -28,6 +29,10 @@ export class IntroComponent implements OnInit {
 
   loading = false;
 
+  subscription!: Subscription;
+
+  lock = false;
+
   ngOnInit(): void {
     this.imgs.forEach((x, _) => {
       const image = new Image();
@@ -38,6 +43,13 @@ export class IntroComponent implements OnInit {
       image.src = x;
     });
     this.loading = false;
+    this.subscription = interval(5000).subscribe((val) =>
+      this.lock ? null : this.right(),
+    );
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
   delay(ms: number) {
@@ -55,7 +67,7 @@ export class IntroComponent implements OnInit {
         while (this.state2 != 0) {
           this.state1 -= 1;
           this.state2 -= 1;
-          await this.delay(1);
+          await this.delay(12);
         }
       } else {
         this.state1 = 100;
@@ -64,7 +76,7 @@ export class IntroComponent implements OnInit {
         while (this.state1 != 0) {
           this.state1 -= 1;
           this.state2 -= 1;
-          await this.delay(1);
+          await this.delay(12);
         }
       }
       this.state = !this.state;
@@ -83,7 +95,7 @@ export class IntroComponent implements OnInit {
         while (this.state2 != 0) {
           this.state1 += 1;
           this.state2 += 1;
-          await this.delay(1);
+          await this.delay(12);
         }
       } else {
         this.state1 = -100;
@@ -92,7 +104,7 @@ export class IntroComponent implements OnInit {
         while (this.state1 != 0) {
           this.state1 += 1;
           this.state2 += 1;
-          await this.delay(1);
+          await this.delay(12);
         }
       }
       this.state = !this.state;
