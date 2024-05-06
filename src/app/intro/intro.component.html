@@ -1,3 +1,15 @@
+<div id="bg-img-container">
+  <img
+    [ngStyle]="{ transform: 'translateX(' + state1 + '%)' }"
+    class="bg-img"
+    src="{{ imgs[idx1] }}"
+  />
+  <img
+    [ngStyle]="{ transform: 'translateX(' + state2 + '%)' }"
+    class="bg-img"
+    src="{{ imgs[idx2] }}"
+  />
+</div>
 <div class="container">
   <div id="slogan">
     <h2>创造你的平行世界</h2>
@@ -24,11 +36,11 @@
   </div>
   <div id="slider-container">
     <div class="slider">
-      <div class="slider-btn primary-btn">
+      <div class="slider-btn primary-btn" (click)="left()">
         <img src="assets/prev_arrow.svg" />
       </div>
       <div class="slider-txt">切换背景</div>
-      <div class="slider-btn primary-btn">
+      <div class="slider-btn primary-btn" (click)="right()">
         <img src="assets/next_arrow.svg" style="margin-right: 2.63px" />
       </div>
     </div>

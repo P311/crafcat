@@ -1,9 +1,25 @@
 @import "../../styles.scss";
 
+#bg-img-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  overflow-x: clip;
+}
+
+.bg-img {
+  height: 95vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .container {
   height: 75vh;
-
-  background-image: url("../../assets/bgs/intro_bg1.png");
+  background: transparent;
   color: white;
   background-size: cover;
   background-repeat: no-repeat;
