@@ -10,6 +10,7 @@ import { ShowcaseComponent } from './showcase/showcase.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: PathLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
