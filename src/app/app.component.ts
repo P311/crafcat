@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crafcat';
+
+  @HostListener('wheel', ['$event'])
+  onScroll(event: WheelEvent) {
+    if (event.ctrlKey) {
+      event.preventDefault();
+    }
+  }
 }
