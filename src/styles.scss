@@ -3,12 +3,31 @@ $primary-100: #b8a9d9;
 $primary-trans: rgba(184, 169, 217, 0.71);
 $primary-200: #8c76bd;
 $primary-300: #003366;
+$primary-trans-hover: rgb(205, 190, 235, 0.71);
 
 html,
 body {
   height: 100%;
-  font-size: calc(0.5 * min(3vh, 3vw));
+  width: 100%;
+  // font-size: calc(0.5 * min(3vh, 3vw));
 }
 body {
   margin: 0;
 }
+
+.primary-btn:hover {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(266deg)
+    brightness(106%) contrast(103%);
+  color: white;
+  cursor: pointer;
+}
+
+$font-sm: 1.2rem; //24px
+$font-md: 1.7rem; //36px
+$font-lg: 2.4rem; //48px
+$font-xl: 3.4rem; //72px
+
+// $font-sm: 24px;
+// $font-md: 36px;
+// $font-lg: 48px;
+// $font-xl: 72px;
