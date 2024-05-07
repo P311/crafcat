@@ -1,0 +1,76 @@
+@import "../../styles.scss";
+
+.container {
+  height: 70vh;
+  color: white;
+  font-size: $font-sm;
+  display: flex;
+  padding-top: 25vh;
+  justify-content: space-evenly;
+  margin: auto 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.txt {
+  width: 16vw;
+  text-align: center;
+}
+
+// this one uses png file since svg causes glitch issue
+#logo1,
+#logo2,
+#logo3,
+#logo4 {
+  background: url("../../assets/logo_showcase.png");
+  background-size: cover !important;
+  margin: 0 auto;
+}
+
+#logo1 {
+  width: 23vw;
+  height: 23vw;
+  transform: rotate(27.06deg);
+}
+
+#logo2 {
+  width: 18vw;
+  height: 18vw;
+  transform: rotate(14.69deg);
+}
+
+#logo3 {
+  width: 14vw;
+  height: 14vw;
+  transform: rotate(20.06deg);
+}
+
+#logo4 {
+  width: 10vw;
+  height: 10vw;
+  transform: rotate(14.69deg);
+}
+
+h4 {
+  margin-top: -1vh;
+}
+
+#logo1:hover {
+  background: url("../../assets/logo_showcase1.png");
+  cursor: pointer;
+}
+
+#logo2:hover {
+  background: url("../../assets/logo_showcase2.png");
+  cursor: pointer;
+}
+
+#logo3:hover {
+  background: url("../../assets/logo_showcase3.png");
+  cursor: pointer;
+}
+
+#logo4:hover {
+  background: url("../../assets/logo_showcase4.png");
+  cursor: pointer;
+}

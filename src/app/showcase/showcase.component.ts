@@ -5,4 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './showcase.component.html',
   styleUrl: './showcase.component.scss',
 })
-export class ShowcaseComponent {}
+export class ShowcaseComponent {
+  readonly imgs: string[] = [
+    'assets/bgs/showcase_bg1.png',
+    'assets/bgs/showcase_bg2.png',
+    'assets/bgs/showcase_bg3.png',
+  ];
+}
