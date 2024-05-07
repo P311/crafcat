@@ -55,6 +55,12 @@ h2 {
 h1 {
   font-size: $font-xl;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: "lg-txt-font";
   src: url("assets/fonts/LogoSCUnboundedSans.ttf") format("opentype");
