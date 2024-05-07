@@ -5,23 +5,36 @@
         src="assets/logo_white.svg"
         id="logo"
         style="height: 8vh"
-        *ngIf="logo_style == 'white'"
+        *ngIf="currentSection == 'intro'"
+      />
+      <img
+        src="assets/logo_purple.svg"
+        id="logo"
+        style="height: 8vh"
+        *ngIf="logoStyle == 'purple' && currentSection != 'intro'"
       />
       <img
         src="assets/logo_deep_purple.svg"
         id="logo"
         style="height: 8vh"
-        *ngIf="logo_style == 'deep_purple'"
+        *ngIf="logoStyle == 'deep_purple'"
       />
-      <div id="logo-title" [ngClass]="logo_style">
+      <div
+        id="logo-title"
+        [ngClass]="currentSection == 'intro' ? 'white' : logoStyle"
+      >
         猫爪匠
         <br />
         CRAFCAT
       </div>
     </div>
-    <div class="nav-btns" [ngClass]="logo_style">
+    <div class="nav-btns" [ngClass]="logoStyle">
       <div class="nav-btn primary-btn">常见问题</div>
-      <div class="nav-btn primary-btn" [routerLink]="'/contact-us'">
+      <div
+        class="nav-btn primary-btn"
+        [routerLink]="'/contact-us'"
+        [ngClass]="currentSection == 'contact-us' ? 'white' : ''"
+      >
         联系我们
       </div>
       <div class="nav-btn primary-btn">
@@ -32,8 +45,20 @@
         </a>
       </div>
       <div class="nav-btn primary-btn">社区</div>
-      <div class="nav-btn primary-btn" [routerLink]="'/showcase'">案例</div>
-      <div class="nav-btn primary-btn" [routerLink]="'/service'">服务</div>
+      <div
+        class="nav-btn primary-btn"
+        [routerLink]="'/showcase'"
+        [ngClass]="currentSection == 'showcase' ? 'white' : ''"
+      >
+        案例
+      </div>
+      <div
+        class="nav-btn primary-btn"
+        [routerLink]="'/service'"
+        [ngClass]="currentSection == 'service' ? 'white' : ''"
+      >
+        服务
+      </div>
     </div>
   </div>
 </div>

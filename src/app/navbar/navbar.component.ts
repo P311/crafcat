@@ -7,13 +7,17 @@ import { Globals } from '../globals';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  logo_style = 'white';
+  logoStyle = 'white';
+  currentSection = 'intro';
 
   constructor(private globals: Globals) {}
 
   ngOnInit() {
     this.globals.navbarTheme.subscribe(
-      (navbarTheme) => (this.logo_style = navbarTheme),
+      (navbarTheme) => (this.logoStyle = navbarTheme),
+    );
+    this.globals.currentSection.subscribe(
+      (section) => (this.currentSection = section),
     );
   }
 }

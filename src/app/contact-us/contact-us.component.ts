@@ -54,5 +54,6 @@ export class ContactUsComponent {
   ];
   constructor(private globals: Globals) {
     this.globals.setNavbarTheme('deep_purple');
+    this.globals.setCurrentSection('contact-us');
   }
 }

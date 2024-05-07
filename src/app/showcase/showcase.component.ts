@@ -13,7 +13,16 @@ export class ShowcaseComponent {
     'assets/bgs/showcase_bg3.png',
   ];
 
+  container_height: number = 0;
+
   constructor(private globals: Globals) {
-    this.globals.setNavbarTheme('white');
+    this.globals.setNavbarTheme('purple');
+    this.globals.setCurrentSection('showcase');
+  }
+
+  ngOnInit() {
+    const element = document.getElementById('showcase-container');
+    this.container_height = element ? element.clientHeight : 0;
+    console.log(this.container_height);
   }
 }

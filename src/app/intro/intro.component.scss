@@ -1,11 +1,12 @@
 @import "../../styles.scss";
 
-.container {
-  height: 75vh;
+#intro-container {
+  height: max-content;
   color: white;
 
   display: flex;
   padding-top: 17vh;
+  padding-bottom: 10vh;
   text-align: center;
   justify-content: center;
 }
@@ -29,7 +30,7 @@ h1 {
 
 #start-btn {
   width: min(18rem, 60vw);
-  height: 7vh;
+  min-height: 7vh;
   border-radius: 2rem;
   background: $primary-trans;
   font-size: $font-lg;

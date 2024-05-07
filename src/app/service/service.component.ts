@@ -13,7 +13,16 @@ export class ServiceComponent {
     'assets/bgs/service_bg3.png',
   ];
 
+  container_height: number = 0;
+
   constructor(private globals: Globals) {
-    this.globals.setNavbarTheme('white');
+    this.globals.setNavbarTheme('purple');
+    this.globals.setCurrentSection('service');
+  }
+
+  ngOnInit() {
+    const element = document.getElementById('service-container');
+    this.container_height = element ? element.clientHeight : 0;
+    console.log(this.container_height);
   }
 }

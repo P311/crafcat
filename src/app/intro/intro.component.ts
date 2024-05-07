@@ -12,7 +12,16 @@ export class IntroComponent {
     'assets/bgs/intro_bg2.png',
     'assets/bgs/intro_bg3.png',
   ];
+  container_height: number = 0;
+
   constructor(private globals: Globals) {
-    this.globals.setNavbarTheme('white');
+    this.globals.setNavbarTheme('purple');
+    this.globals.setCurrentSection('intro');
+  }
+
+  ngOnInit() {
+    const element = document.getElementById('intro-container');
+    this.container_height = element ? element.clientHeight : 0;
+    console.log(this.container_height);
   }
 }
