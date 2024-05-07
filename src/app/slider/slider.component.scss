@@ -1,0 +1,44 @@
+@import "../../styles.scss";
+
+#bg-img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  overflow-x: clip;
+}
+
+.bg-img {
+  height: 95vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#slider-container {
+  top: 13vh;
+  right: 7vw;
+  font-size: $font-sm;
+  position: absolute;
+  color: $primary-100;
+  z-index: 5;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-txt {
+  margin: 1px 5px 0px 5px;
+}
+
+.slider-btn {
+  width: 30px;
+}
+
+.clicked-btn {
+  filter: $svg-hover-color;
+}

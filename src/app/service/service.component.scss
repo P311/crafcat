@@ -1,0 +1,65 @@
+@import "../../styles.scss";
+
+.container {
+  height: 60vh;
+  color: white;
+  font-size: $font-sm;
+  display: flex;
+  padding-top: 24vh;
+  justify-content: space-evenly;
+  margin: auto 10px;
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  word-break: break-word;
+}
+
+#right-txt {
+  text-align: end;
+}
+
+#left-txt,
+#right-txt {
+  width: 24vw;
+  z-index: 10;
+}
+
+#left-hand {
+  left: 15vw;
+}
+#right-hand {
+  right: 15vw;
+}
+
+#left-hand,
+#right-hand {
+  position: absolute;
+  top: 45vh;
+  z-index: 5;
+}
+
+.hands-img {
+  width: min(30vw, 40vh);
+  height: min(30vw, 40vh);
+  background-size: contain !important;
+}
+
+#left-hand-img {
+  background: url("../../assets/left_hand.svg");
+}
+
+#right-hand-img {
+  background: url("../../assets/right_hand.svg");
+}
+
+#left-hand-img:hover {
+  background-image: url("../../assets/left_hand_hover.svg");
+  cursor: pointer;
+}
+
+#right-hand-img:hover {
+  background-image: url("../../assets/right_hand_hover.svg");
+  cursor: pointer;
+}
