@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Subscription, interval } from 'rxjs';
 
 @Component({
@@ -28,7 +28,7 @@ export class SliderComponent implements OnInit {
   lock = false;
 
   ngOnInit(): void {
-    this.imgs.forEach((x, _) => {
+    this.imgs.forEach((x) => {
       const image = new Image();
       image.onload = () => {
         this.imagesLoaded++;
@@ -52,8 +52,8 @@ export class SliderComponent implements OnInit {
 
   async left() {
     if (!this.animationInProgress && !this.loading) {
-      let currentIdx = this.state ? this.idx1 : this.idx2;
-      let nextIdx = currentIdx == this.imgs.length - 1 ? 0 : currentIdx + 1;
+      const currentIdx = this.state ? this.idx1 : this.idx2;
+      const nextIdx = currentIdx == this.imgs.length - 1 ? 0 : currentIdx + 1;
       this.animationInProgress = true;
       if (this.state) {
         this.state2 = 100;
@@ -80,8 +80,8 @@ export class SliderComponent implements OnInit {
 
   async right() {
     if (!this.animationInProgress && !this.loading) {
-      let currentIdx = this.state ? this.idx1 : this.idx2;
-      let nextIdx = currentIdx == 0 ? this.imgs.length - 1 : currentIdx - 1;
+      const currentIdx = this.state ? this.idx1 : this.idx2;
+      const nextIdx = currentIdx == 0 ? this.imgs.length - 1 : currentIdx - 1;
       this.animationInProgress = true;
       if (this.state) {
         this.state2 = -100;

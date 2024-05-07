@@ -6,6 +6,9 @@ build:
 
 format:
 	npx prettier . --write
+	npm run lint --fix
 
 check_format:
 	npx prettier . --check
+	npm run lint
+	

@@ -1,5 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription, interval } from 'rxjs';
+import { Component } from '@angular/core';
 import { Globals } from '../globals';
 
 @Component({
