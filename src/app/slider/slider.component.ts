@@ -8,6 +8,7 @@ import { Subscription, interval } from 'rxjs';
 })
 export class SliderComponent implements OnInit {
   @Input({ required: true }) imgs!: string[];
+  @Input({ required: true }) height!: number;
 
   idx1 = 0;
   idx2 = 0;
