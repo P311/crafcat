@@ -1,1 +1,25 @@
-<div class="container"></div>
+<div class="container">
+  <section>
+    <h4>官方社媒</h4>
+    <div class="box-container">
+      <a *ngFor="let media of medias" class="box-item" [href]="media.link">
+        <img [src]="media.icon" />
+        <div class="box-txt">
+          {{ media.name }}<br />
+          更新内容：{{ media.content }}<br />
+          更新频率：{{ media.update }}<br />
+        </div>
+      </a>
+    </div>
+  </section>
+  <section>
+    <h4>微信社群</h4>
+  </section>
+  <section>
+    <h4>微信客服</h4>
+  </section>
+  <section>
+    <h4>填写问卷能获得私人小助手哦</h4>
+    <button id="questionnaire-btn">填写问卷</button>
+  </section>
+</div>
