@@ -15,7 +15,8 @@ export class IntroComponent {
   container_height: number = 0;
 
   constructor(private globals: Globals) {
-    this.globals.setNavbarTheme('white');
+    this.globals.setNavbarTheme('purple');
+    this.globals.setCurrentSection('intro');
   }
 
   ngOnInit() {
