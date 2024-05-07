@@ -11,6 +11,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
+import { Globals } from './globals';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { SliderComponent } from './slider/slider.component';
     SliderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

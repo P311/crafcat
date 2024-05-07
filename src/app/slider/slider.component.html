@@ -1,4 +1,4 @@
-<div id="bg-img-container">
+<div id="bg-img-container" [ngStyle]="{ display: loading ? 'none' : 'block' }">
   <img
     [ngStyle]="{ transform: 'translateX(' + state1 + '%)' }"
     class="bg-img"

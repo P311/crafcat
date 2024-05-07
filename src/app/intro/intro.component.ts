@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription, interval } from 'rxjs';
+import { Globals } from '../globals';
 
 @Component({
   selector: 'app-intro',
@@ -12,4 +13,7 @@ export class IntroComponent {
     'assets/bgs/intro_bg2.png',
     'assets/bgs/intro_bg3.png',
   ];
+  constructor(private globals: Globals) {
+    this.globals.setNavbarTheme('white');
+  }
 }

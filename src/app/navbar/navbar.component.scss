@@ -20,9 +20,20 @@
   display: flex;
   font-size: $font-md;
   width: 100%;
-  color: $primary-100;
   flex-direction: row-reverse;
   font-family: $lg-txt-font;
+}
+
+.white {
+  color: white;
+}
+
+.white .nav-btn {
+  color: $primary-100;
+}
+
+.deep_purple {
+  color: $primary-300;
 }
 
 .nav-btn {

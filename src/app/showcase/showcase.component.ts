@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Globals } from '../globals';
 
 @Component({
   selector: 'app-showcase',
@@ -11,4 +12,8 @@ export class ShowcaseComponent {
     'assets/bgs/showcase_bg2.png',
     'assets/bgs/showcase_bg3.png',
   ];
+
+  constructor(private globals: Globals) {
+    this.globals.setNavbarTheme('white');
+  }
 }

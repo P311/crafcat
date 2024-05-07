@@ -1,16 +1,29 @@
 <div style="position: absolute; width: 100%; z-index: 100">
   <div class="container">
     <div style="display: flex" [routerLink]="'/'">
-      <img src="assets/logo_white.svg" id="logo" style="height: 8vh" />
-      <div id="logo-title">
+      <img
+        src="assets/logo_white.svg"
+        id="logo"
+        style="height: 8vh"
+        *ngIf="logo_style == 'white'"
+      />
+      <img
+        src="assets/logo_deep_purple.svg"
+        id="logo"
+        style="height: 8vh"
+        *ngIf="logo_style == 'deep_purple'"
+      />
+      <div id="logo-title" [ngClass]="logo_style">
         猫爪匠
         <br />
         CRAFCAT
       </div>
     </div>
-    <div class="nav-btns">
+    <div class="nav-btns" [ngClass]="logo_style">
       <div class="nav-btn primary-btn">常见问题</div>
-      <div class="nav-btn primary-btn">联系我们</div>
+      <div class="nav-btn primary-btn" [routerLink]="'/contact-us'">
+        联系我们
+      </div>
       <div class="nav-btn primary-btn">
         <a
           href="https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth"

@@ -1,5 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription, interval } from 'rxjs';
+import { Component } from '@angular/core';
+import { Globals } from '../globals';
 
 @Component({
   selector: 'app-service',
@@ -12,4 +12,8 @@ export class ServiceComponent {
     'assets/bgs/service_bg2.png',
     'assets/bgs/service_bg3.png',
   ];
+
+  constructor(private globals: Globals) {
+    this.globals.setNavbarTheme('white');
+  }
 }
