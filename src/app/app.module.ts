@@ -13,7 +13,6 @@ import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { Globals } from './globals';
 import { CommunityComponent } from './community/community.component';
-import { NgOptimizedImage } from '@angular/common';
 import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
@@ -33,7 +32,6 @@ import { FaqComponent } from './faq/faq.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgOptimizedImage,
   ],
   providers: [Globals],
   bootstrap: [AppComponent],
