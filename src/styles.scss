@@ -71,6 +71,22 @@ section > h3 {
   margin-bottom: 4vh;
 }
 
+section button {
+  border-radius: 2rem;
+  background-color: $primary-300;
+  color: $primary-100;
+  font-size: $font-sm;
+  height: 4vh;
+  width: 7vw;
+  border-color: transparent;
+  font-family: $sm-txt-font;
+  margin: 0px 1vw;
+}
+
+section button:hover {
+  color: white;
+}
+
 @font-face {
   font-family: "lg-txt-font";
   src: url("assets/fonts/LogoSCUnboundedSans.ttf") format("opentype");

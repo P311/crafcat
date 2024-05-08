@@ -6,6 +6,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { CommunityComponent } from './community/community.component';
 import { FaqComponent } from './faq/faq.component';
+import { ExploreComponent } from './explore/explore.component';
 
 const routes: Routes = [
   { path: 'intro', component: IntroComponent },
@@ -14,10 +15,13 @@ const routes: Routes = [
   { path: 'showcase', component: ShowcaseComponent },
   { path: 'community', component: CommunityComponent },
   { path: 'faq', component: FaqComponent },
+  { path: 'explore', component: ExploreComponent },
   { path: '**', redirectTo: 'intro' },
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
