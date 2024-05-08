@@ -53,9 +53,14 @@
       <div
         class="nav-btn primary-btn"
         [routerLink]="'/community'"
-        [ngClass]="currentSection == 'community' ? 'white' : ''"
+        [ngClass]="
+          ['community', 'game_team'].includes(currentSection) ? 'white' : ''
+        "
       >
-        社区
+        社区<br />
+        <div *ngIf="currentSection == 'game_team'" class="sub-btn">
+          游戏团队
+        </div>
       </div>
       <div
         class="nav-btn primary-btn"
@@ -67,9 +72,15 @@
       <div
         class="nav-btn primary-btn"
         [routerLink]="'/service'"
-        [ngClass]="currentSection == 'service' ? 'white' : ''"
+        [ngClass]="
+          ['service', 'explore', 'process'].includes(currentSection)
+            ? 'white'
+            : ''
+        "
       >
-        服务
+        服务<br />
+        <div *ngIf="currentSection == 'explore'" class="sub-btn">探索需求</div>
+        <div *ngIf="currentSection == 'process'" class="sub-btn">了解流程</div>
       </div>
     </div>
   </div>
