@@ -2,7 +2,13 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 type NavbarTheme = 'purple' | 'deep_purple';
-type CurrentSection = 'intro' | 'service' | 'showcase' | 'contact-us';
+type CurrentSection =
+  | 'intro'
+  | 'service'
+  | 'showcase'
+  | 'contact-us'
+  | 'community'
+  | 'faq';
 
 @Injectable()
 export class Globals {

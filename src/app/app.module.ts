@@ -12,6 +12,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { Globals } from './globals';
+import { CommunityComponent } from './community/community.component';
+import { NgOptimizedImage } from '@angular/common';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +26,15 @@ import { Globals } from './globals';
     NavbarComponent,
     FooterComponent,
     SliderComponent,
+    CommunityComponent,
+    FaqComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NgOptimizedImage,
+  ],
   providers: [Globals],
   bootstrap: [AppComponent],
 })

@@ -1,11 +1,11 @@
 @import "../../styles.scss";
 
 .container {
-  background-color: #b8a9d9;
+  background-color: $primary-100;
   padding-top: 20vh;
   padding-bottom: 10vh;
   text-align: center;
-  color: white;
+  color: $primary-300;
   font-size: $font-sm;
 }
 
@@ -60,9 +60,4 @@ section {
   .box-container {
     justify-content: space-between;
   }
-}
-
-h3,
-h4 {
-  color: $primary-300;
 }

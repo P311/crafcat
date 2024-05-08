@@ -1,0 +1,10 @@
+@import "../../styles.scss";
+
+.container {
+  background-color: $primary-100;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  color: $primary-300;
+  font-size: $font-sm;
+}
