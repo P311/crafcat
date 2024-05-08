@@ -35,21 +35,6 @@ section {
   color: white;
 }
 
-#questionnaire-btn {
-  border-radius: 2rem;
-  background-color: $primary-300;
-  color: $primary-100;
-  font-size: $font-sm;
-  height: 4vh;
-  width: 7vw;
-  border-color: transparent;
-  font-family: $sm-txt-font;
-}
-
-#questionnaire-btn:hover {
-  color: white;
-}
-
 @media (max-width: 400px) {
   .box-container {
     justify-content: center;

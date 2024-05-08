@@ -14,6 +14,7 @@ import { SliderComponent } from './slider/slider.component';
 import { Globals } from './globals';
 import { CommunityComponent } from './community/community.component';
 import { FaqComponent } from './faq/faq.component';
+import { ExploreComponent } from './explore/explore.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,9 @@ import { FaqComponent } from './faq/faq.component';
     SliderComponent,
     CommunityComponent,
     FaqComponent,
+    ExploreComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [Globals],
   bootstrap: [AppComponent],
 })

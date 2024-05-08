@@ -8,7 +8,10 @@ type CurrentSection =
   | 'showcase'
   | 'contact-us'
   | 'community'
-  | 'faq';
+  | 'faq'
+  | 'explore'
+  | 'process'
+  | 'game_team';
 
 @Injectable()
 export class Globals {

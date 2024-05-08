@@ -1,0 +1,79 @@
+@import "../../styles.scss";
+
+.container {
+  height: max-content;
+  color: white;
+  background-image: url("../../assets/bgs/explore_bg.png");
+  display: flex;
+  padding-top: 17vh;
+  padding-bottom: 10vh;
+  height: 65vh;
+  text-align: center;
+  justify-content: center;
+  background-size: cover !important;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.detail-container {
+  background-color: $primary-100;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  color: $primary-300;
+  font-size: $font-sm;
+}
+
+p {
+  text-align: left;
+}
+
+.box > div {
+  max-width: 30vw;
+  min-width: 300px;
+  margin: 0 5vw;
+}
+
+.explore-icon {
+  text-align: left;
+  height: 75px;
+  position: relative;
+}
+
+.explore-icon img {
+  position: absolute;
+  bottom: 0;
+}
+
+#case1,
+#case2,
+#case3,
+#case4 {
+  height: 10vh;
+  background-size: cover;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10vh;
+  color: white;
+}
+
+#case1 {
+  background-image: url("../../assets/explore_icons/case1.svg");
+}
+
+#case2 {
+  background-image: url("../../assets/explore_icons/case2.svg");
+}
+
+#case3 {
+  background-image: url("../../assets/explore_icons/case3.svg");
+}
+
+#case4 {
+  background-image: url("../../assets/explore_icons/case4.svg");
+}
