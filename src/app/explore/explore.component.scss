@@ -34,7 +34,8 @@ p {
 
 .box > div {
   max-width: 30vw;
-  flex-basis: 50%;
+  min-width: 300px;
+  margin: 0 5vw;
 }
 
 .explore-icon {
