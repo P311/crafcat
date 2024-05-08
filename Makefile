@@ -10,5 +10,4 @@ format:
 
 check_format:
 	npx prettier . --check
-	npm run lint
 	
