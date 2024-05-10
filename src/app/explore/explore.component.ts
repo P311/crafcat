@@ -11,4 +11,10 @@ export class ExploreComponent {
     this.globals.setNavbarTheme('deep_purple');
     this.globals.setCurrentSection('explore');
   }
+
+  show = [false, false, false, false, false, false, false, false];
+
+  scroll(el: HTMLElement) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
 }
