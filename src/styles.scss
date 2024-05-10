@@ -9,6 +9,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  position: relative;
   // font-size: calc(0.5 * min(3vh, 3vw));
 }
 body {

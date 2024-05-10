@@ -1,22 +1,76 @@
 @import "../../styles.scss";
 
-.container {
-  height: max-content;
+.main-container {
   color: white;
   background-image: url("../../assets/bgs/explore_bg.png");
-  display: flex;
   padding-top: 17vh;
-  padding-bottom: 10vh;
-  height: 65vh;
   text-align: center;
   justify-content: center;
   background-size: cover !important;
+  padding-bottom: 1vh;
 }
 
-.box {
+#main-txt {
+  width: 20vw;
+  align-self: center;
+  font-size: $font-sm;
+}
+
+#main-txt p {
+  text-align: center;
+}
+
+.main-sub-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box1 {
+  justify-content: space-evenly;
+}
+
+.box2 div {
+  margin: 0px 15px;
+}
+
+.box3 div {
+  display: flex;
+}
+
+.main-icons {
+  position: absolute;
+  top: -60px;
+  left: 0px;
+}
+
+.box3 p {
+  width: 30px;
+  align-self: center;
+  margin: 0px 15px;
+}
+
+.paws {
+  width: 112px;
+  height: 100%;
+}
+
+.paws:hover,
+.claws:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+
+.box,
+.main-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  height: 95%;
+}
+
+.main-box {
+  margin-bottom: 10vh;
 }
 
 .detail-container {
@@ -34,7 +88,7 @@ p {
 
 .box > div {
   max-width: 30vw;
-  min-width: 300px;
+  min-width: 400px;
   margin: 0 5vw;
 }
 
@@ -63,17 +117,33 @@ p {
 }
 
 #case1 {
-  background-image: url("../../assets/explore_icons/case1.svg");
+  background-image: url("../../assets/explore_icons/case1.png");
+}
+
+#case1:hover {
+  background-image: url("../../assets/explore_icons/case1_hover.svg");
 }
 
 #case2 {
-  background-image: url("../../assets/explore_icons/case2.svg");
+  background-image: url("../../assets/explore_icons/case2.png");
+}
+
+#case2:hover {
+  background-image: url("../../assets/explore_icons/case2_hover.svg");
 }
 
 #case3 {
-  background-image: url("../../assets/explore_icons/case3.svg");
+  background-image: url("../../assets/explore_icons/case3.png");
+}
+
+#case3:hover {
+  background-image: url("../../assets/explore_icons/case3_hover.svg");
 }
 
 #case4 {
-  background-image: url("../../assets/explore_icons/case4.svg");
+  background-image: url("../../assets/explore_icons/case4.png");
+}
+
+#case4:hover {
+  background-image: url("../../assets/explore_icons/case4_hover.svg");
 }

@@ -1,19 +1,23 @@
 <div id="service-container">
   <div id="left-txt">
-    <p>我们为什么需要定制服务：或许是为了反叛主流、关怀自我、寻找共鸣？</p>
-    <p>我们又为什么使用游戏形式：或许是为了沉浸体验、任务反馈、创作权利</p>
+    <div class="hidden-txt">
+      <p>我们为什么需要定制服务：或许是为了反叛主流、关怀自我、寻找共鸣？</p>
+      <p>我们又为什么使用游戏形式：或许是为了沉浸体验、任务反馈、创作权利</p>
+    </div>
     <p>你是否想要进一步了解定制游戏的多样用途和独特价值?</p>
     <p>点击下方猫爪，让我们一起探索需求！ CC碰爪！</p>
     <p>探索需求</p>
   </div>
   <div></div>
   <div id="right-txt">
-    <p>
-      我们怎么样挖掘和整理自己的需求：或许通过潜意识研究、场景复现、心理测试？
-    </p>
-    <p>
-      我们又怎么样根据需求和想象搭建一个成熟的游戏世界：或许通过借用思维架构和聘请专业人士？
-    </p>
+    <div class="hidden-txt">
+      <p>
+        我们怎么样挖掘和整理自己的需求：或许通过潜意识研究、场景复现、心理测试？
+      </p>
+      <p>
+        我们又怎么样根据需求和想象搭建一个成熟的游戏世界：或许通过借用思维架构和聘请专业人士？
+      </p>
+    </div>
     <p>在这个斜杠时代，你是否也想探查自己和专业的边界？</p>
     <p>点击下方猫爪，来了解我们的服务如何一步步带你体验游戏制作！</p>
     <p>了解流程</p>
@@ -23,7 +27,7 @@
   <div id="left-hand-img" class="hands-img" [routerLink]="'/explore'"></div>
 </div>
 <div id="right-hand">
-  <div id="right-hand-img" class="hands-img"></div>
+  <div id="right-hand-img" class="hands-img" [routerLink]="'/process'"></div>
 </div>
 
 <app-slider [imgs]="imgs" [height]="container_height"></app-slider>

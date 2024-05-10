@@ -16,8 +16,9 @@ export class NavbarComponent {
     this.globals.navbarTheme.subscribe(
       (navbarTheme) => (this.logoStyle = navbarTheme),
     );
-    this.globals.currentSection.subscribe(
-      (section) => (this.currentSection = section),
-    );
+    this.globals.currentSection.subscribe((section) => {
+      this.currentSection = section;
+      console.log(this.currentSection);
+    });
   }
 }

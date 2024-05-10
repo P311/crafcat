@@ -7,6 +7,7 @@ import { ShowcaseComponent } from './showcase/showcase.component';
 import { CommunityComponent } from './community/community.component';
 import { FaqComponent } from './faq/faq.component';
 import { ExploreComponent } from './explore/explore.component';
+import { ProcessComponent } from './process/process.component';
 
 const routes: Routes = [
   { path: 'intro', component: IntroComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'community', component: CommunityComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'explore', component: ExploreComponent },
+  { path: 'process', component: ProcessComponent },
   { path: '**', redirectTo: 'intro' },
 ];
 @NgModule({

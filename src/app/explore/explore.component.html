@@ -1,14 +1,186 @@
-<div class="container">
-  <div class="box">
-    <div style="width: 50vw"></div>
-    <div style="width: 30vw"></div>
+<div class="main-container">
+  <div class="main-box">
+    <div style="width: 1000px">
+      <div class="main-sub-box box1">
+        <div style="position: relative">
+          <img
+            src="../../assets/explore_icons/girl.svg"
+            *ngIf="show[1]"
+            class="main-icons"
+          />
+          <p>根据你的<br />经历<br />定制游戏<br />的内容</p>
+        </div>
+        <div style="position: relative">
+          <img
+            src="../../assets/explore_icons/car.svg"
+            *ngIf="show[2]"
+            class="main-icons"
+          />
+          <p>根据你的<br />心理<br />定制游戏<br />的形式</p>
+        </div>
+      </div>
+      <div class="main-sub-box box2">
+        <div style="position: relative">
+          <img
+            src="../../assets/explore_icons/house.svg"
+            *ngIf="show[0]"
+            class="main-icons"
+          />
+          <p>根据你的<br />三观<br />定制游戏<br />的原则</p>
+        </div>
+        <div style="transform: translateY(130px)">
+          <img
+            src="../../assets/explore_icons/claw1.svg"
+            class="claws"
+            (click)="scroll(sec1)"
+            (mouseenter)="show[0] = true"
+            (mouseleave)="show[0] = false"
+          />
+        </div>
+        <div>
+          <img
+            src="../../assets/explore_icons/claw2.svg"
+            class="claws"
+            (click)="scroll(sec2)"
+            (mouseenter)="show[1] = true"
+            (mouseleave)="show[1] = false"
+          />
+        </div>
+        <div>
+          <img
+            src="../../assets/explore_icons/claw3.svg"
+            class="claws"
+            (click)="scroll(sec3)"
+            (mouseenter)="show[2] = true"
+            (mouseleave)="show[2] = false"
+          />
+        </div>
+        <div style="transform: translateY(130px)">
+          <img
+            src="../../assets/explore_icons/claw4.svg"
+            class="claws"
+            (click)="scroll(sec4)"
+            (mouseenter)="show[3] = true"
+            (mouseleave)="show[3] = false"
+          />
+        </div>
+        <div style="position: relative">
+          <img
+            src="../../assets/explore_icons/paint.svg"
+            *ngIf="show[3]"
+            class="main-icons"
+          />
+          <p>根据你的<br />审美<br />定制游戏<br />的艺术</p>
+        </div>
+      </div>
+
+      <div class="main-sub-box box3" style="margin-top: 50px">
+        <div style="position: relative">
+          <img
+            src="../../assets/explore_icons/dish.svg"
+            style="
+              width: 80px;
+              align-self: center;
+              position: absolute;
+              left: -80px;
+            "
+            *ngIf="show[4]"
+          />
+          <p>调节<br />生活</p>
+        </div>
+        <div>
+          <img
+            src="../../assets/explore_icons/paw1.png"
+            class="paws"
+            (click)="scroll(sec5)"
+            (mouseenter)="show[4] = true"
+            (mouseleave)="show[4] = false"
+          />
+          <img
+            src="../../assets/explore_icons/paw2.png"
+            class="paws"
+            (click)="scroll(sec6)"
+            (mouseenter)="show[5] = true"
+            (mouseleave)="show[5] = false"
+          />
+        </div>
+        <div style="position: relative">
+          <p>探索<br />关系</p>
+          <img
+            src="../../assets/explore_icons/crane.svg"
+            style="
+              width: 80px;
+              align-self: center;
+              position: absolute;
+              left: 80px;
+            "
+            *ngIf="show[5]"
+          />
+        </div>
+      </div>
+
+      <div class="main-sub-box box3">
+        <div style="position: relative">
+          <img
+            src="../../assets/explore_icons/camera.svg"
+            style="
+              width: 80px;
+              align-self: center;
+              position: absolute;
+              left: -80px;
+            "
+            *ngIf="show[6]"
+          />
+          <p>纪念<br />生活</p>
+        </div>
+        <div>
+          <img
+            src="../../assets/explore_icons/paw3.png"
+            class="paws"
+            (click)="scroll(sec7)"
+            (mouseenter)="show[6] = true"
+            (mouseleave)="show[6] = false"
+          />
+          <img
+            src="../../assets/explore_icons/paw4.png"
+            class="paws"
+            (click)="scroll(sec8)"
+            (mouseenter)="show[7] = true"
+            (mouseleave)="show[7] = false"
+          />
+        </div>
+        <div style="position: relative">
+          <p>创作<br />故事</p>
+          <img
+            src="../../assets/explore_icons/pen.svg"
+            style="
+              width: 80px;
+              align-self: center;
+              position: absolute;
+              left: 80px;
+            "
+            *ngIf="show[7]"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="main-txt">
+      <p>
+        猫爪匠 的 LOGO 中隐含着我们想要<br />
+        帮助客户满足的需求：
+      </p>
+      <p>四个爪趾对应定制游戏的特点</p>
+      <p>四个掌心方向对应定制游戏的应用场景</p>
+    </div>
   </div>
+  <div>下滑了解更多细节</div>
 </div>
+
 <div class="detail-container">
   <section>
     <h3>定制游戏特点</h3>
     <div class="box">
-      <div>
+      <div #sec1>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/house.svg" />
         </div>
@@ -26,7 +198,7 @@
         </p>
       </div>
 
-      <div>
+      <div #sec2>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/girl.svg" />
         </div>
@@ -48,7 +220,7 @@
         </p>
       </div>
 
-      <div>
+      <div #sec3>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/car.svg" />
         </div>
@@ -72,7 +244,7 @@
         </p>
       </div>
 
-      <div>
+      <div #sec4>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/paint.svg" />
         </div>
@@ -110,7 +282,7 @@
   <section>
     <h3>定制游戏用途</h3>
     <div class="box">
-      <div>
+      <div #sec5>
         <div id="case1">查看案例</div>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/dish.svg" />
@@ -121,7 +293,7 @@
           - 趣味成就：（细节待补充）<br />
         </p>
       </div>
-      <div>
+      <div #sec6>
         <div id="case2">查看案例</div>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/camera.svg" />
@@ -132,7 +304,7 @@
           - 送给朋友：（细节待补充）<br />
         </p>
       </div>
-      <div>
+      <div #sec7>
         <div id="case3">查看案例</div>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/crane.svg" />
@@ -143,7 +315,7 @@
           - 团队建设：（细节待补充）<br />
         </p>
       </div>
-      <div>
+      <div #sec8>
         <div id="case4">查看案例</div>
         <div class="explore-icon">
           <img src="../../assets/explore_icons/pen.svg" />
@@ -175,6 +347,6 @@
   </section>
 
   <section>
-    <h3>作品问题</h3>
+    <h3>关于作品</h3>
   </section>
 </div>
