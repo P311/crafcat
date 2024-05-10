@@ -1,0 +1,104 @@
+@import "../../styles.scss";
+
+.main-container {
+  color: white;
+  background-image: url("../../assets/bgs/process_bg.png");
+  padding-top: 17vh;
+  text-align: center;
+  justify-content: center;
+  background-size: cover !important;
+  padding-bottom: 1vh;
+}
+
+#main-txt {
+  min-width: 150px;
+  align-self: center;
+  font-size: $font-sm;
+}
+
+#main-txt p {
+  text-align: center;
+}
+
+.main-sub-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.box2 {
+  margin-top: 30vh;
+}
+
+.item p {
+  width: 150px;
+}
+
+.box2 div {
+  margin: 0px 15px;
+}
+
+.box3 div {
+  display: flex;
+}
+
+.main-icons {
+  position: absolute;
+  top: -60px;
+  left: 0px;
+}
+
+.box3 p {
+  width: 30px;
+  align-self: center;
+  margin: 0px 15px;
+}
+
+.paws {
+  width: 112px;
+  height: 100%;
+}
+
+.paws:hover,
+.claws:hover {
+  filter: brightness(1.5);
+  cursor: pointer;
+}
+
+.stars:hover {
+  filter: brightness(1.5);
+}
+
+.box,
+.main-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 95%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.main-box {
+  margin-bottom: 10vh;
+}
+
+.detail-container {
+  background-color: $primary-100;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  color: $primary-300;
+  font-size: $font-sm;
+}
+
+p {
+  text-align: left;
+}
+
+.box > div {
+  max-width: 30vw;
+  min-width: 400px;
+  margin: 0 5vw;
+}

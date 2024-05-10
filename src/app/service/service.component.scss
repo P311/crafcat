@@ -63,3 +63,9 @@ p {
   background-image: url("../../assets/right_hand_hover.svg");
   cursor: pointer;
 }
+
+@media (max-width: 800px) {
+  .hidden-txt {
+    display: none;
+  }
+}

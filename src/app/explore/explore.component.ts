@@ -8,7 +8,7 @@ import { Globals } from '../globals';
 })
 export class ExploreComponent {
   constructor(private globals: Globals) {
-    this.globals.setNavbarTheme('deep_purple');
+    this.globals.setNavbarTheme('purple');
     this.globals.setCurrentSection('explore');
   }
 

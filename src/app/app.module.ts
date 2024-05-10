@@ -15,6 +15,7 @@ import { Globals } from './globals';
 import { CommunityComponent } from './community/community.component';
 import { FaqComponent } from './faq/faq.component';
 import { ExploreComponent } from './explore/explore.component';
+import { ProcessComponent } from './process/process.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ExploreComponent } from './explore/explore.component';
     CommunityComponent,
     FaqComponent,
     ExploreComponent,
+    ProcessComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [Globals],

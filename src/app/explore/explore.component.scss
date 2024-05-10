@@ -4,10 +4,10 @@
   color: white;
   background-image: url("../../assets/bgs/explore_bg.png");
   padding-top: 17vh;
-  height: 90vh;
   text-align: center;
   justify-content: center;
   background-size: cover !important;
+  padding-bottom: 1vh;
 }
 
 #main-txt {
@@ -70,7 +70,7 @@
 }
 
 .main-box {
-  padding-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 
 .detail-container {
