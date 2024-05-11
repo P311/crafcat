@@ -8,6 +8,7 @@ import { CommunityComponent } from './community/community.component';
 import { FaqComponent } from './faq/faq.component';
 import { ExploreComponent } from './explore/explore.component';
 import { ProcessComponent } from './process/process.component';
+import { SampleComponent } from './sample/sample.component';
 
 const routes: Routes = [
   { path: 'intro', component: IntroComponent },
@@ -18,11 +19,15 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'explore', component: ExploreComponent },
   { path: 'process', component: ProcessComponent },
+  { path: 'sample', component: SampleComponent },
   { path: '**', redirectTo: 'intro' },
 ];
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      scrollPositionRestoration: 'enabled',
+    }),
   ],
   exports: [RouterModule],
 })
