@@ -65,9 +65,13 @@
       <div
         class="nav-btn primary-btn"
         [routerLink]="'/showcase'"
-        [ngClass]="currentSection == 'showcase' ? 'white' : ''"
+        [ngClass]="
+          ['showcase', 'sample'].includes(currentSection) ? 'white' : ''
+        "
       >
-        案例
+        案例<br />
+        <div *ngIf="currentSection == 'sample'" class="sub-btn">官方样品</div>
+        <!-- <div *ngIf="currentSection == 'process'" class="sub-btn">了解流程</div> -->
       </div>
       <div
         class="nav-btn primary-btn"

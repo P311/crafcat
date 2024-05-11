@@ -1,0 +1,66 @@
+@import "../../styles.scss";
+
+.container {
+  background-color: $primary-100;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  text-align: center;
+  color: $primary-300;
+  font-size: $font-sm;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th {
+  padding-right: 3vw;
+}
+
+td {
+  padding: 0 10px;
+}
+
+td:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.white {
+  color: white;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 95%;
+}
+
+.box > div {
+  max-width: 30vw;
+  min-width: 700px;
+  margin: 0 5vw;
+}
+
+.sample_img {
+  filter: brightness(0.5);
+}
+
+.sample_img:hover {
+  filter: brightness(1);
+  cursor: pointer;
+}
+
+.left {
+  transform: translateY(-50px);
+}
+
+.right {
+  transform: translateY(50px);
+}
+
+.switch-page:hover {
+  color: white;
+  cursor: pointer;
+}

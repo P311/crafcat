@@ -1,0 +1,132 @@
+<div class="container">
+  <section>
+    <h3>通过以下热门作品标签检索</h3>
+    <table>
+      <tbody>
+        <tr>
+          <th scope="row">游戏用途</th>
+          <td
+            *ngFor="let item of usage"
+            (click)="updateItem(item)"
+            [ngClass]="hasItem(item) ? 'white' : ''"
+          >
+            {{ item }}
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">游戏原则</th>
+          <td
+            *ngFor="let item of principle"
+            (click)="updateItem(item)"
+            [ngClass]="hasItem(item) ? 'white' : ''"
+          >
+            {{ item }}
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">游戏内容</th>
+          <td
+            *ngFor="let item of content"
+            (click)="updateItem(item)"
+            [ngClass]="hasItem(item) ? 'white' : ''"
+          >
+            {{ item }}
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">游戏机制</th>
+          <td
+            *ngFor="let item of mech"
+            (click)="updateItem(item)"
+            [ngClass]="hasItem(item) ? 'white' : ''"
+          >
+            {{ item }}
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">游戏艺术</th>
+          <td
+            *ngFor="let item of art"
+            (click)="updateItem(item)"
+            [ngClass]="hasItem(item) ? 'white' : ''"
+          >
+            {{ item }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section style="margin: 100px 0">
+    <div class="box">
+      <div
+        *ngFor="
+          let sample of currentSample.slice(
+            currentPage * pageSize,
+            (currentPage + 1) * pageSize
+          );
+          index as i
+        "
+        [ngClass]="i % 2 == 0 ? 'left' : 'right'"
+      >
+        <div>
+          <img
+            [src]="'../../assets/sample_imgs/' + sample.img"
+            class="sample_img"
+          />
+        </div>
+        <p>
+          {{ sample.title }}
+        </p>
+        <p>
+          {{ sample.highlight }}
+        </p>
+        <p>
+          {{ sample.description }}
+        </p>
+        <div style="line-height: 45px">
+          <button *ngFor="let tag of sample.tags">{{ tag }}</button>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top: 150px">
+      <span
+        style="padding-right: 20px"
+        class="switch-page"
+        (click)="prevPage()"
+        *ngIf="currentPage > 0"
+        >上一页</span
+      >
+      第{{ currentPage + 1 }}页
+      <span
+        style="padding-left: 20px"
+        class="switch-page"
+        (click)="nextPage()"
+        *ngIf="currentPage < samples.length / pageSize - 1"
+        >下一页</span
+      >
+    </div>
+  </section>
+
+  <section>
+    <h3>
+      想要拥有和以上案例一样精彩的定制小游戏吗？<br />
+      快来加入我们吧！
+    </h3>
+    <div>
+      <button>
+        <a
+          href="https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth"
+          >开始定制</a
+        >
+      </button>
+      <button>
+        <a [routerLink]="'/contact-us'">联系我们</a>
+      </button>
+    </div>
+  </section>
+
+  <section>
+    <h3>关于作品</h3>
+  </section>
+</div>
