@@ -85,7 +85,9 @@
           {{ sample.description }}
         </p>
         <div style="line-height: 45px">
-          <button *ngFor="let tag of sample.tags">{{ tag }}</button>
+          <button *ngFor="let tag of sample.tags" class="tags">
+            {{ tag }}
+          </button>
         </div>
       </div>
     </div>

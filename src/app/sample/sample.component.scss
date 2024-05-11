@@ -40,7 +40,7 @@ td:hover {
 .box > div {
   max-width: 30vw;
   min-width: 700px;
-  margin: 0 5vw;
+  margin: 50px 5vw;
 }
 
 .sample_img {
@@ -63,4 +63,15 @@ td:hover {
 .switch-page:hover {
   color: white;
   cursor: pointer;
+}
+
+.tags {
+  cursor: auto;
+  font-family: $sm-txt-font !important;
+}
+
+.tags:hover {
+  cursor: auto;
+  color: $primary-100 !important;
+  font-family: $sm-txt-font;
 }
