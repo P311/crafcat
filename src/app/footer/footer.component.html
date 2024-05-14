@@ -5,40 +5,45 @@
   </div>
   <div id="footer-lists">
     <div class="list-container">
-      <div class="primary-btn">社区</div>
-      <div class="primary-btn">关于我们</div>
-      <div class="primary-btn">加入我们</div>
-      <div class="primary-btn">联系我们</div>
+      <div class="primary-btn" [routerLink]="'community'">社区</div>
+      <div class="primary-btn" [routerLink]="'community'">关于我们</div>
+      <div class="primary-btn" [routerLink]="'community'">加入我们</div>
+      <div class="primary-btn" [routerLink]="'contact-us'">联系我们</div>
     </div>
     <div class="list-container">
-      <div class="primary-btn">案例</div>
-      <div class="primary-btn">官方样品</div>
-      <div class="primary-btn">官方案例</div>
+      <div class="primary-btn" [routerLink]="'showcase'">案例</div>
+      <div class="primary-btn" [routerLink]="'sample'">官方样品</div>
+      <div class="primary-btn" [routerLink]="'sample'">官方案例</div>
       <div class="primary-btn">用户反馈</div>
       <div class="primary-btn">定制榜单</div>
     </div>
     <div class="list-container">
-      <div class="primary-btn">服务</div>
-      <div class="primary-btn">游戏特点</div>
-      <div class="primary-btn">游戏用途</div>
-      <div class="primary-btn">流程图示</div>
-      <div class="primary-btn">收费标准</div>
+      <div class="primary-btn" [routerLink]="'service'">服务</div>
+      <div class="primary-btn" [routerLink]="'explore'">游戏特点</div>
+      <div class="primary-btn" [routerLink]="'explore'">游戏用途</div>
+      <div class="primary-btn" [routerLink]="'process'">流程图示</div>
+      <div class="primary-btn" [routerLink]="'process'">收费标准</div>
     </div>
     <div class="list-container">
-      <div class="primary-btn">常见问题</div>
-      <div class="primary-btn">关于游戏</div>
-      <div class="primary-btn">关于服务</div>
+      <div class="primary-btn" [routerLink]="'faq'">常见问题</div>
+      <div class="primary-btn" [routerLink]="'faq'">关于游戏</div>
+      <div class="primary-btn" [routerLink]="'faq'">关于服务</div>
       <div class="primary-btn">审核</div>
       <div class="primary-btn">版权</div>
-      <div class="primary-btn">关于社区</div>
-      <div class="primary-btn">加入我们</div>
+      <div class="primary-btn" [routerLink]="'community'">关于社区</div>
+      <div class="primary-btn" [routerLink]="'community'">加入我们</div>
     </div>
     <div class="list-container">
-      <div class="primary-btn">开始定制</div>
-      <div class="primary-btn">联系我们</div>
-      <div class="primary-btn">社媒</div>
-      <div class="primary-btn">社群</div>
-      <div class="primary-btn">客服</div>
+      <div class="primary-btn">
+        <a
+          href="https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth"
+          >开始定制</a
+        >
+      </div>
+      <div class="primary-btn" [routerLink]="'contact-us'">联系我们</div>
+      <div class="primary-btn" [routerLink]="'community'">社媒</div>
+      <div class="primary-btn" [routerLink]="'community'">社群</div>
+      <div class="primary-btn" [routerLink]="'contact-us'">客服</div>
     </div>
   </div>
 </div>
