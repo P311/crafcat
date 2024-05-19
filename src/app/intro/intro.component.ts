@@ -24,4 +24,8 @@ export class IntroComponent {
     this.container_height = element ? element.clientHeight : 0;
     console.log(this.container_height);
   }
+
+  openQuestionnaire(){
+    window.open("https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth", '_blank');
+  }
 }

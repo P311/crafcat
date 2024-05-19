@@ -11,4 +11,8 @@ export class ProcessComponent {
     this.globals.setNavbarTheme('purple');
     this.globals.setCurrentSection('process');
   }
+
+  openQuestionnaire(){
+    window.open("https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth", '_blank');
+  }
 }

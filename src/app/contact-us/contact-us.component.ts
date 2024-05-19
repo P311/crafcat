@@ -56,4 +56,8 @@ export class ContactUsComponent {
     this.globals.setNavbarTheme('deep_purple');
     this.globals.setCurrentSection('contact-us');
   }
+
+  openQuestionnaire(){
+    window.open("https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth", '_blank');
+  }
 }
