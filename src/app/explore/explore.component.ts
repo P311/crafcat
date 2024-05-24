@@ -18,8 +18,10 @@ export class ExploreComponent {
     el.scrollIntoView({ behavior: 'smooth' });
   }
 
-  openQuestionnaire(){
-    window.open("https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth", '_blank');
+  openQuestionnaire() {
+    window.open(
+      'https://uxljxnzrikr.feishu.cn/share/base/form/shrcn2M9nKUHtaunrgTJf9g7yth',
+      '_blank',
+    );
   }
-  
 }

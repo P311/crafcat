@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 #service-container {
-  height: 60vh;
+  height: 65vh;
   color: white;
   font-size: $font-sm;
   display: flex;
@@ -24,19 +24,20 @@ p {
 #right-txt {
   width: 40vw;
   z-index: 10;
+  height: 20vh;
 }
 
 #left-hand {
-  left: 15vw;
+  left: 10vw;
 }
 #right-hand {
-  right: 15vw;
+  right: 10vw;
 }
 
 #left-hand,
 #right-hand {
   position: absolute;
-  top: 45vh;
+  top: 20vh;
   z-index: 5;
 }
 
@@ -48,10 +49,14 @@ p {
 
 #left-hand-img {
   background: url("../../assets/left_hand.svg");
+  position: absolute;
+  left: 5vw;
 }
 
 #right-hand-img {
   background: url("../../assets/right_hand.svg");
+  position: absolute;
+  right: 5vw;
 }
 
 #left-hand-img:hover {
