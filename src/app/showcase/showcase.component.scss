@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 #showcase-container {
-  height: 70vh;
+  height: max-content;
   color: white;
   font-size: $font-sm;
   display: flex;
@@ -10,6 +10,7 @@
   margin: auto 10px;
   position: relative;
   z-index: 1;
+  min-height: 75vh;
 }
 
 .txt {
