@@ -5,7 +5,7 @@
       height: 'calc(' + height + 'px + 10vh)',
     }"
     class="bg-img"
-    src="{{ imgs[idx1] }}"
+    [src]="imgs[idx1]"
   />
   <img
     [ngStyle]="{
@@ -13,7 +13,7 @@
       height: 'calc(' + height + 'px + 10vh)',
     }"
     class="bg-img"
-    src="{{ imgs[idx2] }}"
+    [src]="imgs[idx2]"
   />
 </div>
 <div id="slider-container" *ngIf="!disabled">
