@@ -1,0 +1,22 @@
+<div id="intro-container">
+  <div id="slogan">
+    <h2>..界面开发中</h2>
+    <h2>...敬请期待后续精彩服务</h2>
+    <div class="description">
+      <p>
+        欢迎接受猫爪匠定制游戏服务<br />
+        我们尊重最独特的创意需求，我们提供最可靠的制作技术 <br />
+        快来开启你的定制之旅吧！
+      </p>
+      <button id="start-btn" (click)="openQuestionnaire()">开始定制</button
+      ><br />
+      <button id="start-btn" [routerLink]="'/contact-us'">联系我们</button>
+    </div>
+  </div>
+
+  <app-slider
+    [imgs]="imgs"
+    [height]="container_height"
+    [disabled]="true"
+  ></app-slider>
+</div>

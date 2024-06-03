@@ -9,17 +9,20 @@ import { FaqComponent } from './faq/faq.component';
 import { ExploreComponent } from './explore/explore.component';
 import { ProcessComponent } from './process/process.component';
 import { SampleComponent } from './sample/sample.component';
+import { DevelopComponent } from './develop/develop.component';
+import { Guard } from './guard';
 
 const routes: Routes = [
-  { path: 'intro', component: IntroComponent },
-  { path: 'service', component: ServiceComponent },
-  { path: 'contact-us', component: ContactUsComponent },
-  { path: 'showcase', component: ShowcaseComponent },
-  { path: 'community', component: CommunityComponent },
-  { path: 'faq', component: FaqComponent },
-  { path: 'explore', component: ExploreComponent },
-  { path: 'process', component: ProcessComponent },
-  { path: 'sample', component: SampleComponent },
+  { path: 'intro', component: IntroComponent, canActivate: [Guard] },
+  { path: 'service', component: ServiceComponent, canActivate: [Guard] },
+  { path: 'contact-us', component: ContactUsComponent, canActivate: [Guard] },
+  { path: 'showcase', component: ShowcaseComponent, canActivate: [Guard] },
+  { path: 'community', component: CommunityComponent, canActivate: [Guard] },
+  { path: 'faq', component: FaqComponent, canActivate: [Guard] },
+  { path: 'explore', component: ExploreComponent, canActivate: [Guard] },
+  { path: 'process', component: ProcessComponent, canActivate: [Guard] },
+  { path: 'sample', component: SampleComponent, canActivate: [Guard] },
+  { path: 'develop', component: DevelopComponent },
   { path: '**', redirectTo: 'intro' },
 ];
 @NgModule({

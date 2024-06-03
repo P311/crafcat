@@ -12,6 +12,7 @@ type CurrentSection =
   | 'explore'
   | 'process'
   | 'sample'
+  | 'develop'
   | 'game_team';
 
 @Injectable()

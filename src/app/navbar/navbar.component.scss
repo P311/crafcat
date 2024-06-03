@@ -46,10 +46,13 @@
 }
 
 @media (max-width: 768px) {
-  #logo {
-    display: none;
-  }
-  #logo-title {
+  // #logo {
+  //   display: none;
+  // }
+  // #logo-title {
+  //   display: none;
+  // }
+  .nav-btns {
     display: none;
   }
 }

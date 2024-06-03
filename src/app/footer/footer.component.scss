@@ -37,8 +37,13 @@
   font-size: $font-sm;
 }
 
-@media (max-width: 1026px) {
-  #logo {
+@media (max-width: 800px) {
+  #footer-lists {
     display: none;
+  }
+
+  .container[_ngcontent-ng-c1524406791] {
+    height: 25vh;
+    justify-content: space-evenly;
   }
 }

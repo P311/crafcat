@@ -16,7 +16,7 @@
     src="{{ imgs[idx2] }}"
   />
 </div>
-<div id="slider-container">
+<div id="slider-container" *ngIf="!disabled">
   <div class="slider">
     <div class="slider-btn primary-btn" (click)="left()">
       <img src="assets/prev_arrow.svg" />
@@ -26,7 +26,7 @@
       <img src="assets/next_arrow.svg" style="margin-right: 2.63px" />
     </div>
   </div>
-  <div class="slider">
+  <div class="slider" *ngIf="!disabled">
     <div class="slider-btn primary-btn" (click)="lock = true">
       <img
         src="assets/lock.svg"

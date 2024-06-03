@@ -9,6 +9,7 @@ import { Subscription, interval } from 'rxjs';
 export class SliderComponent implements OnInit {
   @Input({ required: true }) imgs!: string[];
   @Input({ required: true }) height!: number;
+  @Input() disabled = false;
 
   idx1 = 0;
   idx2 = 0;
@@ -41,6 +42,7 @@ export class SliderComponent implements OnInit {
     this.subscription = interval(10000).subscribe((_) =>
       this.lock ? null : this.right(),
     );
+    this.lock = this.disabled ? true : this.lock;
   }
 
   ngOnDestroy() {

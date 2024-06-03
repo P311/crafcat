@@ -17,6 +17,7 @@ import { FaqComponent } from './faq/faq.component';
 import { ExploreComponent } from './explore/explore.component';
 import { ProcessComponent } from './process/process.component';
 import { SampleComponent } from './sample/sample.component';
+import { DevelopComponent } from './develop/develop.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { SampleComponent } from './sample/sample.component';
     ExploreComponent,
     ProcessComponent,
     SampleComponent,
+    DevelopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [Globals],
