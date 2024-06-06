@@ -9,8 +9,9 @@
   />
   <img
     [ngStyle]="{
-      transform: 'translateX(' + state2 + '%)',
-      height: 'calc(' + height + 'px + 10vh)',
+        transform: 'translateX(' + state2 + '%)',
+        height: 'calc(' + height + 'px + 10vh)',
+        position: 'absolute',
     }"
     class="bg-img"
     [src]="imgs[idx2]"
@@ -34,9 +35,18 @@
         [ngClass]="lock ? 'clicked-btn' : ''"
       />
     </div>
-    <div class="slider-txt">锁定解锁</div>
-    <div class="slider-btn primary-btn" (click)="lock = false">
-      <img src="assets/unlock.svg" [ngClass]="!lock ? 'clicked-btn' : ''" />
+    <div class="slider">
+      <div class="slider-btn primary-btn" (click)="lock = true">
+        <img
+          src="assets/lock.svg"
+          style="margin-left: 3px"
+          [ngClass]="lock ? 'clicked-btn' : ''"
+        />
+      </div>
+      <div class="slider-txt">锁定解锁</div>
+      <div class="slider-btn primary-btn" (click)="lock = false">
+        <img src="assets/unlock.svg" [ngClass]="!lock ? 'clicked-btn' : ''" />
+      </div>
     </div>
   </div>
 </div>

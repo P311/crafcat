@@ -10,10 +10,9 @@
 }
 
 .bg-img {
-  // height: min(120vh, 200vw);
+  height: min(120vh, 200vw);
   width: 100%;
   object-fit: cover;
-  position: absolute;
   top: 0;
   left: 0;
 }
